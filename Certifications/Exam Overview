@@ -1,0 +1,23 @@
+This Hortonworks Certification Exam consists of tasks that you need to complete successfully. The tasks are located in the EXAM folder on the desktop.
+
+
+1. The machine you are on now is referred to as the "client machine" in the task instructions. It is an Ubuntu instance configured as an edge node that connects to a Hortonworks Data Platform (HDP) 2.2 cluster. You are currently logged in as the "horton" user.
+
+2. Perform all of the tasks on this client machine as the "horton" user. 
+
+3. The HDP 2.2 cluster consists of a single node named namenode. You can SSH from this client machine to namenode as the root user:
+
+ssh root@namenode
+
+The root password is "hadoop".
+
+4. You have very limited Internet access. You are only allowed to view the documentation for Hadoop, Pig, Hive, Sqoop and Flume. Shortcuts to these docs are on the Desktop.
+
+5. There is also a shortcut to Ambari on the Desktop.  Both the username and password to login to Ambari is "admin".
+
+6. If an HDP service is not running, run the start-all-services.sh script in the /home/horton folder:
+
+~/start-all-services.sh
+
+This sends a request to Ambari to start all HDP services. You can view the progress of this request in Ambari.
+
