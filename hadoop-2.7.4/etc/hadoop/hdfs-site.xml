@@ -17,5 +17,12 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
-
+<property>
+<name>dfs.namenode.name.dir</name>
+<value>/home/bigdata/system/hdfs/name</value>
+</property>
+<property>
+<name>dfs.datanode.data.dir</name>
+<value>/home/bigdata/system/hdfs/data</value>
+</property>
 </configuration>
