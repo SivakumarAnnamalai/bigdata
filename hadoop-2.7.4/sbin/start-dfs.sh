@@ -78,6 +78,7 @@ fi
 #---------------------------------------------------------
 # secondary namenodes (if any)
 
+<<COMMENT
 SECONDARY_NAMENODES=$($HADOOP_PREFIX/bin/hdfs getconf -secondarynamenodes 2>/dev/null)
 
 if [ -n "$SECONDARY_NAMENODES" ]; then
@@ -88,6 +89,7 @@ if [ -n "$SECONDARY_NAMENODES" ]; then
       --hostnames "$SECONDARY_NAMENODES" \
       --script "$bin/hdfs" start secondarynamenode
 fi
+COMMENT
 
 #---------------------------------------------------------
 # quorumjournal nodes (if any)
